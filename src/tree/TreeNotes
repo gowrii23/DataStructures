@@ -1,0 +1,59 @@
+//Tree cannot contains cycles
+//has only 2 children per node
+//Node is called as leaf if it has no children
+
+Binary tree vs binary search tree
+=================================
+binary search tree -- follows ordering property
+all left descendents <= n < all right descendents
+
+hint - duplicate may or may no allowed as per interviewer
+
+Always ask interviewer its a Binary tree or BST
+
+
+Balanced tree
+=============
+ensure insert and find are O(log n)
+
+Complete BT
+===========
+Every level is fully filled, atleast left to Right
+
+
+Full Binary Tree
+================
+Every node has 2 or 0 children
+
+Perfect Binary Tree
+===================
+Both full and complete
+
+
+InOrder
+=======
+L, root, R
+
+Pre Order
+=========
+root, L, R
+
+Post Order
+==========
+L, R, root
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

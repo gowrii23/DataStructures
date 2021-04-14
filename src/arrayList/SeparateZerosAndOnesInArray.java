@@ -5,13 +5,14 @@ public class SeparateZerosAndOnesInArray {
 	//Separate Zero and One in a Array
 	public static void main(String[] args) {
 		  
-		int[] arr = {0,1,1,0,1,1,0};
-		
+		//int[] arr = {0,1,1,0,1,1,0};
+		int[] arr = {0,0,1,0,1,1,0};
+
 		//Solution 1:
 		swapZeroAndOne(arr);
 		
 		//Solution 2:
-		seperate0and1(arr,arr.length);
+		//seperate0and1(arr,arr.length);
 		
 		for(int re:arr) {
 			System.out.println(re);
@@ -21,6 +22,8 @@ public class SeparateZerosAndOnesInArray {
 	private static void swapZeroAndOne(int[] arr) {
 		//Swap 0 and 1 to Separate values
 		int left_pointer=0, mid = arr.length/2, right_pointer = arr.length-1,temp;
+		
+		int count = 0;
 		
 		while(left_pointer!=mid) {
 			
@@ -38,6 +41,8 @@ public class SeparateZerosAndOnesInArray {
 				//Move Rigtt Pointer
 				right_pointer--;
 			}
+			
+			System.out.println(" count "+ ++count);
 		}
 	}
 	
